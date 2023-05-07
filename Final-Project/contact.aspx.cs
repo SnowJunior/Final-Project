@@ -37,6 +37,7 @@ namespace Final_Project
             cmd.ExecuteNonQuery();
 
             conn.Close();
+
         }
     }
 }
