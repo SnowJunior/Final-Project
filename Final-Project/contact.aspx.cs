@@ -37,6 +37,10 @@ namespace Final_Project
             cmd.ExecuteNonQuery();
 
             conn.Close();
+
+            txtMessCon.Text = "";
+            txtEmailCon.Text = "";
+            txtUserCon.Text = "";
         }
     }
 }
