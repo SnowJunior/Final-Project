@@ -38,9 +38,6 @@ namespace Final_Project
 
             conn.Close();
 
-            txtMessCon.Text = "";
-            txtEmailCon.Text = "";
-            txtUserCon.Text = "";
         }
     }
 }
