@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="index.master.cs" Inherits="Final_Project.index" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div class="header"> 
+            <div class="navbar">
+                <div class="nav-item">
+
+                    <asp:HyperLink ID="HyperLink1" runat="server">Home</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink4" runat="server">About</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/book.aspx">Book</asp:HyperLink>
+                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/contact.aspx">Contact</asp:HyperLink>
+
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div class="footer">
+            <div id="footer">Onyango Real Estate &#169; All Rights Reserved.2023</div>
+        </div>
+    </form>
+</body>
+</html>
