@@ -67,15 +67,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="About.aspx" />
     <Content Include="App_Data\houses-db.mdf" />
     <Content Include="App_Data\houses-db_log.ldf">
       <DependentUpon>houses-db.mdf</DependentUpon>
     </Content>
     <Content Include="book.aspx" />
     <Content Include="contact.aspx" />
+    <Content Include="contact.css" />
+    <Content Include="index.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
     <Compile Include="book.aspx.cs">
       <DependentUpon>book.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
