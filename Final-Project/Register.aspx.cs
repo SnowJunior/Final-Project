@@ -22,6 +22,12 @@ namespace Final_Project
             string uName, uEmail, uPass;
             int uNId;
 
+            uName = txtRegUsername.Text;
+            uEmail = txtRegEmail.Text;
+            uPass = txtRegPass.Text;
+
+            uNId = Convert.ToInt32(txtNId.Text);
+
             // Setup for user registration
 
             string connstring = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\USER\Desktop\final-project\Final-Project\Final-Project\App_Data\houses-db.mdf;Integrated Security=True";
@@ -33,6 +39,14 @@ namespace Final_Project
             // setup SQL command 
 
             SqlCommand cmd = new SqlCommand();
+
+            cmd.CommandText = "INSERT INTO Users values('"+uNId+"','"+uName+"','"+uEmail+"','"+uPass+"')";
+
+            cmd.Connection = conn;
+
+            cmd.ExecuteNonQuery();
+
+            conn.Close();
 
 
         }

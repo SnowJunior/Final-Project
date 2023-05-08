@@ -17,7 +17,7 @@
                 <div class="user-box">
                     <asp:Label ID="Label1" runat="server" Text="National Id" CssClass="label"></asp:Label>
                     <br />
-                    <asp:TextBox ID="txtNId" runat="server" CssClass="input" TextMode="Number"></asp:TextBox>
+                    <asp:TextBox ID="txtNId" runat="server" CssClass="input"></asp:TextBox>
                 </div>
                 <div class="user-box">
                     <asp:Label ID="Label4" runat="server" Text="Username" CssClass="label"></asp:Label>
@@ -43,7 +43,6 @@
                     <br />
                     <asp:TextBox ID="txtRegPass" runat="server" CssClass="input" TextMode="Password" Height="29px" Width="228px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtRegPass" ErrorMessage="Password is required" ForeColor="Red" ValidationGroup="auth">*</asp:RequiredFieldValidator>
-                    <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="txtRegPass" ErrorMessage="Password must be at least 8 - 15 characters long" ForeColor="Red" MaximumValue="15" MinimumValue="8" Type="Integer" ValidationGroup="auth"> *</asp:RangeValidator>
                     <br />
                 </div>
 
@@ -53,7 +52,6 @@
                     <br />
                     <asp:TextBox ID="txtCnfPass" runat="server" CssClass="input" TextMode="Password" Height="29px" Width="224px"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtCnfPass" ErrorMessage="Confrim password is required" ForeColor="Red" ValidationGroup="auth">*</asp:RequiredFieldValidator>
-                    <asp:RangeValidator ID="RangeValidator2" runat="server" ControlToValidate="txtCnfPass" ErrorMessage="Password must be at least 8 - 15 characters long" ForeColor="Red" MaximumValue="15" MinimumValue="8" Type="Integer" ValidationGroup="auth">  *</asp:RangeValidator>
                     <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="txtRegPass" ControlToValidate="txtCnfPass" ErrorMessage="Passwords do not match" ForeColor="Red" ValidationGroup="auth">*</asp:CompareValidator>
                     <br />
                 </div>
