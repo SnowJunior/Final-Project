@@ -1,5 +1,5 @@
 ﻿body {
-    background: linear-gradient(to right, #ea1d6f 0%, #3296f1 100%);
+    background: linear-gradient(#141e30, #243b55);
 }
 
 /* Three columns side by side */
@@ -36,7 +36,7 @@
     }
 
 .title {
-    color: grey;
+    color: white;
 }
 
 .button {

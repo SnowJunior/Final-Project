@@ -39,5 +39,12 @@ namespace Final_Project
             conn.Close();
 
         }
+
+        protected void btnCancel_Click(object sender, EventArgs e)
+        {
+            txtEmailCon.Text = "";
+            txtMessCon.Text = "";
+            txtUserCon.Text = "";
+        }
     }
 }

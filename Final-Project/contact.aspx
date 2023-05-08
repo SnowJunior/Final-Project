@@ -27,7 +27,7 @@
                 <asp:TextBox ID="txtMessCon" runat="server" CssClass="app-form-control" placeholder="Message"></asp:TextBox>
             </div>
             <div class="app-form-group buttons">
-              <button class="app-form-button">CANCEL</button>
+                <asp:Button ID="btnCancel" runat="server" Text="CANCEL" CssClass="app-form-button" OnClick="btnCancel_Click" />
                 <asp:Button ID="btnContact" runat="server" OnClick="btnContact_Click" Text="Send" CssClass="app-form-button" />
             </div>
           </div>
