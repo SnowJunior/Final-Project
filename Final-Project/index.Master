@@ -7,22 +7,25 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link rel=“stylesheet” href=“https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+    <link rel=“stylesheet” href=“https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css” integrity=“sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l” crossorigin=“anonymous”>
 </head>
 <body>
     <form id="form1" runat="server">
 
-        <div class="header"> 
-            <div class="navbar">
-                <div class="nav-item">
-
-                    <asp:HyperLink ID="HyperLink1" runat="server">Home</asp:HyperLink>
-                    <asp:HyperLink ID="HyperLink4" runat="server">About</asp:HyperLink>
-                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/book.aspx">Book</asp:HyperLink>
-                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/contact.aspx">Contact</asp:HyperLink>
-
-                </div>
-            </div>
-        </div>
+        <header>
+        <a href="#" class="logo">Onyango Estates</a>
+        <nav>
+            <ul>
+                <li> <asp:HyperLink ID="HyperLink1" runat="server">Home</asp:HyperLink>   </li>
+                <li> <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/About.aspx">About Us</asp:HyperLink></li>
+                <li> <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/book.aspx">Book</asp:HyperLink></li>
+                <li> <asp:HyperLink ID="HyperLink4" runat="server" CssClass="cta" NavigateUrl="~/contact.aspx">Contact
+                     </asp:HyperLink></li>
+            </ul>
+        </nav>
+    </header>
 
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
